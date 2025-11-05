@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-wordcloud
-seaborn
+
 
 
 # Dummy data
@@ -45,15 +44,6 @@ st.header("Team-wise Engagement Comparison")
 team_avg = data.groupby('Team')[['Communication', 'Recognition', 'Growth']].mean()
 st.dataframe(team_avg)
 
-# Word Cloud for Comments
-st.header("Feedback Word Cloud")
-comments_text = " ".join(data['Comments'])
-wordcloud = WordCloud(width=800, height=400, background_color='white').generate(comments_text)
 
-fig, ax = plt.subplots()
-ax.imshow(wordcloud, interpolation='bilinear')
-ax.axis('off')
-st.pyplot(fig)
-st.area_chart(data, y ='Employee')
 
 

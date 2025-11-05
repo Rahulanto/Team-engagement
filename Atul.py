@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-from wordcloud import WordCloud
-import seaborn as sns
+wordcloud
+seaborn
 
 
 # Dummy data

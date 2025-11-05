@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
-pip install wordcloud
 from wordcloud import WordCloud
-pip install seaborn
 import seaborn as sns
 
 
